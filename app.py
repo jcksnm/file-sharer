@@ -73,8 +73,6 @@ def sendFile():
         conn.commit()
         cur.execute("SELECT * FROM billing_log;")
 
-        #BONUS POINTS: this line deletes the image from the s3 bucket. this creates a DEAD LINK that is sent to the emails. it is commented out so that the functionality can be observed seperately from the main functionality. 
-        #s3_client.delete_object(Bucket = 'cloud--bucket', Key = "images/"+ str(filename))
     return render_template('sendfile.html')
 
 #this function initializes the database. its endpoint must be run prior to user login. 
