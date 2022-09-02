@@ -1,0 +1,33 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>File upload</title>
+</head>
+<body class="hello">
+  <header>
+    <h1>Send your files here!</h1>
+  </header>
+<p>Here, you can upload your file and enter up to five email addresses to send it to.</p>
+<form class="ui form" method="POST" enctype = "multipart/form-data">
+    <div class="field">
+        <label>Email</label>
+        <input type="text" name="email" placeholder="email"><br>
+        <label>Email</label>
+        <input type="text" name="email" placeholder="email"><br>
+        <label>Email</label>
+        <input type="text" name="email" placeholder="email"><br>
+        <label>Email</label>
+        <input type="text" name="email" placeholder="email"><br>
+        <label>Email</label>
+        <input type="text" name="email" placeholder="email"><br>
+
+        <label>Image File </label>
+        <input type = "file" name = "fileupload" />
+     
+    </div>
+    <button class="ui blue button" type="submit">Send</button>
+</form>
+  <a href="/"> Go to main page</a>
+</body>
+</html>
